@@ -1,0 +1,84 @@
+:root {
+  --accent-color-main: #ff385c;
+  --j-qkgmf: #dddddd;
+  --f-mkcy-f: #ffff;
+  --fo-jk-r-s: #717171;
+  --font-family: "Circular", -apple-system, "BlinkMacSystemFont", "Roboto",
+    "Helvetica Neue", sans-serif;
+  --h-font-size: 0.875rem;
+  --font-weight-600: 600;
+  --font-p: 0.75rem;
+}
+
+.fixedPad {
+  padding: 1px 100px;
+}
+.tabsItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.css-aym9vq-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  color: var(--accent-color-main) !important;
+}
+.css-1aquho2-MuiTabs-indicator {
+  transition: color 0.3s, border-color 0.3s;
+  background: var(--accent-color-main) !important;
+}
+
+.css-aym9vq-MuiButtonBase-root-MuiTab-root:hover {
+  color: rgb(56, 54, 54);
+  border-bottom: 2px solid rgb(83, 83, 83);
+}
+.css-aym9vq-MuiButtonBase-root-MuiTab-root {
+  font-size: var(--font-p) !important;
+  text-transform: capitalize !important;
+}
+.css-1ujnqem-MuiTabs-root .MuiTabs-scrollButtons {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding: 5px !important;
+  margin: 14px;
+  border: 1px solid var(--j-qkgmf);
+}
+.filter {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  justify-content: space-around;
+  font-family: var(--font-family);
+  gap: 23px;
+}
+.css-1f2kvjf-MuiFormControlLabel-root {
+  margin-right: 21px !important;
+}
+.css-1f2kvjf-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: var(--font-p) !important;
+  font-weight: 500;
+}
+.filter p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-p);
+  border: 1px solid var(--j-qkgmf);
+  padding: 10px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: rgb(63, 62, 62) !important;
+}
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: #000000 !important;
+}
+.priceSwitch{
+    border-radius: 12px;
+    border-color: var(--j-qkgmf);
+    border-width: 1px;
+    border-style: solid;
+   
+    cursor: pointer;
+}
