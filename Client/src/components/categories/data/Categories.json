@@ -1,0 +1,223 @@
+{
+    "beachFront": [
+      {
+        "id": 1,
+        "title": "Cozy Cabin",
+        "location": "Spintex Accra, Ghana",
+        "description": "A charming cabin in the woods.",
+        "price": 100,
+        "images": [
+          "/images/places/Amazing pools05.jpeg",
+          "/images/places/Amazing pools08.jpeg",
+          "/images/places/Amazing pools07.jpeg"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Beachfront Villa",
+        "location": "Spintex Accra, Ghana",
+        "description": "Luxurious villa with ocean views.",
+        "price": 250,
+        "images": [
+          "/images/places/Bed and breakfast01.jpeg",
+          "/images/places/Bed and breakfast02.jpeg",
+          "/images/places/Bed and breakfast03.jpeg"
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Beachfront Villa",
+        "location": "Spintex Accra, Ghana",
+        "description": "Luxurious villa with ocean views.",
+        "price": 250,
+        "images": [
+          "/images/places/Bed and breakfast04.jpeg",
+          "/images/places/Bed and breakfast05.jpeg",
+          "/images/places/Bed and breakfast06.jpeg"
+        ]
+      },
+      {
+        "id": 4,
+        "title": "Beachfront Villa",
+        "location": "Spintex Accra, Ghana",
+        "description": "Luxurious villa with ocean views.",
+        "price": 250,
+        "images": [
+          "/images/places/Bed and breakfast07.jpeg",
+          "/images/places/Bed and breakfast08.jpeg",
+          "/images/places/Bed and breakfast09.jpeg"
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Mountain Retreat",
+        "location": "Spintex Accra, Ghana",
+        "description": "Secluded retreat in the mountains.",
+        "price": 120,
+        "images": [
+          "/images/places/Amazing pools10.jpeg",
+          "/images/places/Amazing pools11.jpeg",
+          "/images/places/Amazing pools12.jpeg"
+        ]
+    },
+    {
+      "id": 6,
+      "title": "Beachfront Villa",
+      "location": "Spintex Accra, Ghana",
+      "description": "Luxurious villa with ocean views.",
+      "price": 250,
+      "images": [
+        "/images/places/Amazing pools13.jpeg",
+        "/images/places/Amazing pools14.jpeg",
+        "/images/places/Amazing pools15.jpeg"
+      ]
+    }
+    ],
+    "rooms":[
+        {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Amazing pools13.jpeg",
+              "/images/places/Amazing pools14.jpeg",
+              "/images/places/Amazing pools15.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Amazing pools16.jpeg",
+              "/images/places/Amazing pools17.jpeg",
+              "/images/places/Amazing pools18.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Amazing pools19.jpeg",
+              "/images/places/Amazing pools20.jpeg",
+              "/images/places/Amazing pools21.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "Luxurious villa with ocean views",
+            "price": 100,
+            "images": [
+              "/images/places/Amazing pools22.jpeg",
+              "/images/places/Amazing pools23.jpeg",
+              "/images/places/Amazing pools24.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Amazing pools25.jpeg",
+              "/images/places/Amazing pools26.jpeg",
+              "/images/places/Amazing pools27.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "Luxurious villa with ocean views",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast01.jpeg",
+              "/images/places/Bed and breakfast02.jpeg",
+              "/images/places/Bed and breakfast03.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast04.jpeg",
+              "/images/places/Bed and breakfast06.jpeg",
+              "/images/places/Bed and breakfast07.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast08.jpeg",
+              "/images/places/Bed and breakfast09.jpeg",
+              "/images/places/Bed and breakfast10.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast11.jpeg",
+              "/images/places/Bed and breakfast12.jpeg",
+              "/images/places/Bed and breakfast13.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast14.jpeg",
+              "/images/places/Bed and breakfast15.jpeg",
+              "/images/places/Bed and breakfast16.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "A charming cabin in the woods.",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast04.jpeg",
+              "/images/places/Bed and breakfast06.jpeg",
+              "/images/places/Bed and breakfast07.jpeg"
+            ]
+          },
+          {
+            "id": 1,
+            "title": "Cozy Cabin",
+            "location": "Spintex Accra, Ghana",
+            "description": "Luxurious villa with ocean views",
+            "price": 100,
+            "images": [
+              "/images/places/Bed and breakfast05.jpeg",
+              "/images/places/Bed and breakfast08.jpeg",
+              "/images/places/Bed and breakfast07.jpeg"
+            ]
+          }
+    ]
+  }
+  

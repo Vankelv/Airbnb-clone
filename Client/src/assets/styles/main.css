@@ -25,6 +25,12 @@
   transition: color 0.3s, border-color 0.3s;
   background: var(--accent-color-main) !important;
 }
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1794px !important;
+    }
+}
+
 
 .css-aym9vq-MuiButtonBase-root-MuiTab-root:hover {
   color: rgb(56, 54, 54);
@@ -82,3 +88,76 @@
    
     cursor: pointer;
 }
+
+/*Listing */
+.items {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .items .col{
+    padding: 0;
+  }
+  .item {
+    flex: 0 0 calc(16.66667% - 20px); 
+    max-width: calc(16.66667% - 20px); 
+    box-sizing: border-box; 
+    padding: 0px;
+    margin: 30px 0px !important;
+  }
+  .imageSlider {
+    max-width: 100%; 
+    text-align: center; 
+  }
+  
+  .imageSlider img {
+   width: 270px;
+    height: 250px; 
+    border-radius: 10px;
+  }
+  .details{
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1;
+    font-family: var(--font-family);
+  }
+  .details p{
+    color: #717171;
+  }
+  .details .price{
+ font-weight: 500;
+ font-family: var(--font-family);
+ color: #000000;
+ font-size: 15px;
+  }
+  .details .price span{
+    font-weight: 400;
+    color: #717171;
+  }
+  .details h4{
+  font-size: 15px;
+  }
+  .image-slider-carousel {
+    margin: 0;
+    height: 160px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    background: #364d79;
+  }
+  .carousel-indicators [data-bs-target]{
+    height: 6px !important;
+    width: 6px !important;
+    border-radius: 50% !important;
+
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+  /* width: 2rem!important;
+  height: 2rem!important; */
+  margin: 0px 40px;
+  padding: 5px;
+  border-radius: 50%;
+   
+  }
+  

@@ -1,13 +1,10 @@
 import * as React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
+import { Tabs, Tab, Box, Typography } from "@mui/material";
 import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Typography from "@mui/material/Typography";
 import {
   RamenDining,
   BeachAccess,
@@ -29,6 +26,8 @@ import {
 import "../assets/styles/main.css";
 import { Container, Col, Row } from "react-bootstrap";
 import FilterIcon from "./FilterIcon";
+import BeachFronts from './categories/BeachFronts';
+import Rooms from "./categories/Rooms";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -142,6 +141,10 @@ const Listings = () => {
                 <Tab icon={<Pool />} label="Pool" {...a11yProps(12)} />
                 <Tab icon={<Villa />} label="Villa" {...a11yProps(13)} />
                 <Tab icon={<Key />} label="New" {...a11yProps(14)} />
+                <Tab icon={<Villa />} label="Villa" {...a11yProps(15)} />
+                <Tab icon={<Key />} label="New" {...a11yProps(16)} />
+                <Tab icon={<Villa />} label="Villa" {...a11yProps(17)} />
+                <Tab icon={<Key />} label="New" {...a11yProps(18)} />
               </Tabs>
             </Box>
           </Col>
@@ -163,7 +166,7 @@ const Listings = () => {
           Item One
         </TabPanel>
         <TabPanel value={value} index={1}>
-          Item Two
+         <BeachFronts/>
         </TabPanel>
         <TabPanel value={value} index={2}>
           Item Three
@@ -172,10 +175,10 @@ const Listings = () => {
           Item Four
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Item Five
+        <Rooms/>
         </TabPanel>
         <TabPanel value={value} index={5}>
-          Item Six
+        
         </TabPanel>
         <TabPanel value={value} index={6}>
           Item Seven
@@ -195,7 +198,6 @@ const Listings = () => {
         <TabPanel value={value} index={11}>
           Item Seven
         </TabPanel>
-
       </Container>
     </div>
   );
