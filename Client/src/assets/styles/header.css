@@ -24,16 +24,22 @@
 .navbar-expand {
   border-bottom: 1px solid var(--j-qkgmf);
 }
-.header {
+.container .header {
     display: flex !important;
-    justify-content: space-between;
+    justify-content: space-between !important;
     align-items: center;
     background-color: #fff; /* Header background color */
     margin: 20px 0px;
-    padding: 0px 100px;
-    width: 100%;
+    width: 100% !important;
   }
-  
+  .header .col{
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+  }
+  .header .user{
+    justify-content: flex-end;
+  }
   .logo img {
     height: 40px; /* Adjust logo height as needed */
   }
@@ -110,15 +116,12 @@
     align-items: center;
     gap: 30px;
   }
-  .navLast{
-    width: 70px;
+  .user .navLast{
+    width: 90px;
     align-items: center;
     gap: 10px;
     justify-content: center;
-    background: transparent;
     cursor: pointer;
-    margin: 0;
-    text-align: inherit;
     background-color: var(--f-mkcy-f);
     border: 1px solid var(--j-qkgmf);
     border-radius: 21px;

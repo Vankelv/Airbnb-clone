@@ -24,9 +24,14 @@ const Header = () => {
         <Container>
           <Row className="header">
             <Col>
+            <Nav>
+              <Nav.Link href="#">
               <Navbar.Brand className="logo">
-                <img src="/images/Airbnb.png" alt="Airbnb Logo" />
+              <img src="/images/Airbnb.png" alt="Airbnb Logo" />
               </Navbar.Brand>
+              </Nav.Link>
+            </Nav>
+            
             </Col>
             <Col className="navMiddle">
               <Nav className="menu">
@@ -34,12 +39,12 @@ const Header = () => {
                 <span className="bbtn"></span>
                 <Nav.Link href="#">Any week</Nav.Link>
                 <span className="bbtn"></span>
-                <p className="searchP">
+                <Nav.Link className="searchP">
                   Add guess
                   <span>
                     <FontAwesomeIcon icon={faSearch} />
                   </span>
-                </p>
+                </Nav.Link>
               </Nav>
             </Col>
             <Col className="user">

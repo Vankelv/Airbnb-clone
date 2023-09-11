@@ -1,23 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import rooms from './data/Categories.json'; 
-import Loading from "../Loading";
+import beachFront from './data/Categories.json'; // Import the JSON data
 
-const Rooms = () => {
-  const [activeIndexes, setActiveIndexes] = useState(Array(rooms.rooms.length).fill(0));
-  const roomsListings = rooms.rooms;
-  const [loading, setLoading] = useState(true);
+const Surfings = () => {
+  const [activeIndexes, setActiveIndexes] = useState(Array(beachFront.beachFront.length).fill(0));
+  const beachFrontListings = beachFront.beachFront;
 
-  useEffect(() => {
-
-    const loadingTimeout = setTimeout(() => {
-      setLoading(false);
-    }, 3000); 
-
-    return () => clearTimeout(loadingTimeout);
-  }, []);
   const handleSelect = (selectedIndex, carouselIndex) => {
     const newIndexes = [...activeIndexes];
     newIndexes[carouselIndex] = selectedIndex;
@@ -28,17 +18,12 @@ const Rooms = () => {
     <div>
       <Container>
         <Row className="items flex">
-          {roomsListings.map((listing, index) => (
+          {beachFrontListings.map((listing, index) => (
             <Col className="item" key={index}>
-              {loading ? (
-                <Loading/>
-              ) 
-              : (
-                <>
-                 <Carousel
+              <Carousel
                 activeIndex={activeIndexes[index]}
                 onSelect={(selectedIndex) => handleSelect(selectedIndex, index)}
-                
+                swipe={true}
                 interval={null}
               >
                 {listing.images.map((imageUrl, imageIndex) => (
@@ -58,11 +43,6 @@ const Rooms = () => {
                 <p>{listing.description}</p>
                 <p className="price"> Ghs {listing.price} <span>night</span></p>
               </div>
-              </>
-              )
-              
-              }
-             
             </Col>
           ))}
         </Row>
@@ -71,4 +51,4 @@ const Rooms = () => {
   );
 };
 
-export default Rooms;
+export default Surfings;

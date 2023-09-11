@@ -1,21 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import beachFront from "./data/Categories.json"; // Import the JSON data
+import rooms from "./data/Categories.json"; // Import the JSON data
 import Loading from "../Loading";
 
-const BeachFront = () => {
+const Breakfast = () => {
   const [activeIndexes, setActiveIndexes] = useState(
-    Array(beachFront.beachFront.length).fill(0)
+    Array(rooms.rooms.length).fill(0)
   );
-  const beachFrontListings = beachFront.beachFront;
+  const roomsListings = rooms.rooms;
   const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    const loadingTimeOut = setTimeout(() => {
+    // Simulate a loading delay and then set loading to false
+    const loadingTimeout = setTimeout(() => {
       setLoading(false);
-    }, 3000);
-    return () => clearTimeout(loadingTimeOut);
+    }, 3000); // Adjust the timeout as needed
+
+    return () => clearTimeout(loadingTimeout);
   }, []);
 
   const handleSelect = (selectedIndex, carouselIndex) => {
@@ -28,10 +31,10 @@ const BeachFront = () => {
     <div>
       <Container>
         <Row className="items flex">
-          {beachFrontListings.map((listing, index) => (
+          {roomsListings.map((listing, index) => (
             <Col className="item" key={index}>
               {loading ? (
-                <Loading />
+                  <Loading/>
               ) : (
                 <>
                   <Carousel
@@ -39,7 +42,6 @@ const BeachFront = () => {
                     onSelect={(selectedIndex) =>
                       handleSelect(selectedIndex, index)
                     }
-                   
                     interval={null}
                   >
                     {listing.images.map((imageUrl, imageIndex) => (
@@ -52,13 +54,11 @@ const BeachFront = () => {
                       </Carousel.Item>
                     ))}
                   </Carousel>
-
                   <div className="details">
                     <h4>{listing.title}</h4>
                     <p>{listing.location}</p>
                     <p>{listing.description}</p>
                     <p className="price">
-                      {" "}
                       Ghs {listing.price} <span>night</span>
                     </p>
                   </div>
@@ -72,4 +72,4 @@ const BeachFront = () => {
   );
 };
 
-export default BeachFront;
+export default Breakfast;

@@ -27,7 +27,11 @@ import "../assets/styles/main.css";
 import { Container, Col, Row } from "react-bootstrap";
 import FilterIcon from "./FilterIcon";
 import BeachFronts from './categories/BeachFronts';
+import Surfings from "./categories/Surfing";
 import Rooms from "./categories/Rooms";
+import BreakFast from "./categories/BreakFast";
+import Lake from "./categories/Lake";
+import Loading from "./Loading";
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -163,28 +167,28 @@ const Listings = () => {
           </Col>
         </Row>
         <TabPanel value={value} index={0}>
-          Item One
+          <BreakFast/>
         </TabPanel>
         <TabPanel value={value} index={1}>
          <BeachFronts/>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <Lake/>
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item Four
+          <Surfings/>
         </TabPanel>
         <TabPanel value={value} index={4}>
         <Rooms/>
         </TabPanel>
         <TabPanel value={value} index={5}>
-        
+    
         </TabPanel>
         <TabPanel value={value} index={6}>
           Item Seven
         </TabPanel>
         <TabPanel value={value} index={7}>
-          Item Seven
+    
         </TabPanel>
         <TabPanel value={value} index={8}>
           Item Seven

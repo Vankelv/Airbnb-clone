@@ -2,19 +2,23 @@ import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { Carousel } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import beachFront from "./data/Categories.json"; // Import the JSON data
+import rooms from "./data/Categories.json";
 import Loading from "../Loading";
 
-const BeachFront = () => {
+const Lake = () => {
   const [activeIndexes, setActiveIndexes] = useState(
-    Array(beachFront.beachFront.length).fill(0)
+    Array(rooms.rooms.length).fill(0)
   );
-  const beachFrontListings = beachFront.beachFront;
+  const roomsListings = rooms.rooms;
   const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const loadingTimeOut = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+
+  
+useEffect(() => {
+    const loadingTimeOut = setTimeout
+      (() => {
+        setLoading(false);
+      },
+      2000);
     return () => clearTimeout(loadingTimeOut);
   }, []);
 
@@ -28,7 +32,7 @@ const BeachFront = () => {
     <div>
       <Container>
         <Row className="items flex">
-          {beachFrontListings.map((listing, index) => (
+          {roomsListings.map((listing, index) => (
             <Col className="item" key={index}>
               {loading ? (
                 <Loading />
@@ -72,4 +76,4 @@ const BeachFront = () => {
   );
 };
 
-export default BeachFront;
+export default Lake;
