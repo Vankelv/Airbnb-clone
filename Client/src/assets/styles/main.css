@@ -160,4 +160,5 @@
   border-radius: 50%;
    
   }
-  
+  .carousel .carousel-control { visibility: hidden; }
+.carousel:hover .carousel-control { visibility: visible; }
